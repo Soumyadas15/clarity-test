@@ -10,24 +10,29 @@ export default function Home() {
       <h1 className="text-2xl md:text-3xl font-bold w-[70%] sm:w-full text-center">This is a basic site to test Microsoft Clarity</h1>
       <div className="flex gap-4 items-center flex-col md:flex-row">
         <Button 
-            label="Button 1"
+            label="Generate Report"
             bgColor="bg-violet-700"
             border="bg-violet-700"
         />
         <Button 
-            label="Button 2"
+            label="Submit"
             bgColor="bg-cyan-600"
             border="bg-cyan-600"
         />
         <Button 
-            label="Button 3"
+            label="Add"
             bgColor="bg-rose-500"
             border="bg-rose-500"
         />
         <Button 
-            label="Button 4"
+            label="Search"
             bgColor="bg-purple-700"
             border="bg-purple-700"
+        />
+        <Button 
+            label="Text"
+            bgColor="bg-cyan-600"
+            border="bg-cyan-600"
         />
       </div>
     </div>
