@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Navbar } from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script strategy="lazyOnload" id="clarity-script">
+      <Script 
+        strategy="lazyOnload" 
+        id="clarity-script">
         {`
           (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -28,7 +31,9 @@ export default function RootLayout({
       </Script>
       <body className={inter.className}>
         <main>
+          <Navbar label1="PROMACT - assignment" label2="By Saumyapratim"/>
           {children}
+          
         </main>
         
       </body>

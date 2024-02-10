@@ -1,24 +1,28 @@
 interface ButtonProps {
     label: string;
-    logString: string
-    bgColor: string
+    bgColor: string;
+    border: string;
 }
 
 export const Button = ({
     label,
-    logString,
-    bgColor
+    bgColor,
+    border
 }: ButtonProps) => {
+
     return (
         <button 
-            onClick={() => console.log(logString)}
-        className={`
-
+            onClick={() => console.log(`${label} logged`)}
+            className={`
+                text-white
+                font-semibold
                 p-4
+                w-[20rem]
+                sm:w-[10rem]
                 rounded-lg
-                bg-${bgColor}
+                ${bgColor}
                 border-[3px]
-                border-${bgColor}
+                ${border}
                 hover:bg-opacity-75
                 transition
             `}
