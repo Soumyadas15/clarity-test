@@ -9,10 +9,10 @@ export const Navbar = ({
 }: NavbarProps) => {
     return (
         <div className="fixed bg-neutral-300 h-[4rem] w-screen font-semibold flex items-center pl-5 text-xl pr-5 justify-between">
-            <div>
+            <div className="text-[1rem] sm:text-xl">
                 {label1}
             </div>
-            <div className="font-light text-md">
+            <div className="font-light text-[1rem] sm:text-md">
                 {label2}
             </div>
         </div>
